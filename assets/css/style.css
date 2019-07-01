@@ -1,0 +1,13 @@
+body{
+    background-image: url(../images/backgroundImage.jpg);
+}
+
+#title{
+    color: white;
+    text-align: center;
+}
+
+#questionarea{
+    color: white;
+    text-align: center;
+}
