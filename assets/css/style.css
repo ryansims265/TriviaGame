@@ -11,3 +11,16 @@ body{
     color: white;
     text-align: center;
 }
+
+.choice{
+    background-color: blue;
+    
+}
+
+.choice:hover{
+background-color: purple;
+}
+
+#startbutton:hover{
+    background-color: purple;
+}
