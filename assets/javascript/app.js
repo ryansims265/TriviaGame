@@ -53,15 +53,7 @@ $("#startbutton").click(function () {
     }
 
 
-    $("#choice1").click(function () {
-        losses++
-    });
-    $("#choice2").click(function () {
-        losses++
-    });
-    $("#choice3").click(function () {
-        losses++
-    });
+    
     $("#choice4").click(function () {
         console.log("Question 2 Starting");
         $("#question").text("What is the name of the second Indian Jones Movie?");
@@ -200,7 +192,7 @@ $("#startbutton").click(function () {
 function reset() {
     var wins = 0;
     var losses = 0;
-    var unanswered = 0;
+    
 
 }
 
