@@ -4,7 +4,6 @@ var losses = 0;
 var unanswered = 0;
 $("#winsfinal").text("");
 $("#lossesfinal").text("");
-$("#unansweredfinal").text("");
 $("#startbutton").text("Click here to Start Game");
 
 var timeLeft = 80;
@@ -26,21 +25,43 @@ $("#startbutton").click(function () {
     $("#choice4").text("A bag of sand");
     $("#startbutton").text("");
     $("#clocktitle").text("Countdown Clock");
-    
+    $("#winsfinal").text("Correct: " + wins);
+    $("#lossesfinal").text("Incorrect: " + losses);
+    $("#choice1").click(function () {
+        losses++;
+        $("#lossesfinal").text("Losses: " + losses);
+    });
+    $("#choice2").click(function () {
+        losses++;
+        $("#lossesfinal").text("Losses: " + losses);
+    });
+    $("#choice3").click(function () {
+        losses++;
+        $("#lossesfinal").text("Losses: " + losses);
+    });
+
     var timerId = setInterval(countdown, 1000);
-function countdown() {
-    if (timeLeft == 0) {
-        clearTimeout(timerId);
-        doSomething();
-    } else {
-        elem.innerHTML = timeLeft + ' seconds remaining';
-        timeLeft--;
-        
+    function countdown() {
+        if (timeLeft == 0) {
+            clearTimeout(timerId);
+            doSomething();
+        } else {
+            elem.innerHTML = timeLeft + ' seconds remaining';
+            timeLeft--;
+
+        }
     }
-}
 
 
-
+    $("#choice1").click(function () {
+        losses++
+    });
+    $("#choice2").click(function () {
+        losses++
+    });
+    $("#choice3").click(function () {
+        losses++
+    });
     $("#choice4").click(function () {
         console.log("Question 2 Starting");
         $("#question").text("What is the name of the second Indian Jones Movie?");
@@ -50,10 +71,22 @@ function countdown() {
         $("#choice3").text("Last Crusade");
         $("#choice4").text("Kingdom of the Crystal Skull");
         $("#clocktitle").text("Countdown Clock");
+        $("#choice1").click(function () {
+            losses++;
+            $("#lossesfinal").text("Losses: " + losses);
+        });
+        $("#choice4").click(function () {
+            losses++;
+            $("#lossesfinal").text("Losses: " + losses);
+        });
+        $("#choice3").click(function () {
+            losses++;
+            $("#lossesfinal").text("Losses: " + losses);
+        });
 
         wins++;
         $("#winsfinal").text("Wins:" + wins);
-        
+
 
 
         $("#choice2").click(function () {
@@ -65,9 +98,21 @@ function countdown() {
             $("#choice3").text("Whip");
             $("#choice4").text("Bazooka");
             $("#clocktitle").text("Countdown Clock");
+            $("#choice1").click(function () {
+                losses++;
+                $("#lossesfinal").text("Losses: " + losses);
+            });
+            $("#choice2").click(function () {
+                losses++;
+                $("#lossesfinal").text("Losses: " + losses);
+            });
+            $("#choice4").click(function () {
+                losses++;
+                $("#lossesfinal").text("Losses: " + losses);
+            });
             wins++;
-        $("#winsfinal").text("Wins:" + wins);
-            
+            $("#winsfinal").text("Wins:" + wins);
+
 
             $("#choice3").click(function () {
                 console.log("Question 4 Starting");
@@ -78,9 +123,21 @@ function countdown() {
                 $("#choice3").text("Ansel Elgort");
                 $("#choice4").text("Tom Holland");
                 $("#clocktitle").text("Countdown Clock");
+                $("#choice4").click(function () {
+                    losses++;
+                    $("#lossesfinal").text("Losses: " + losses);
+                });
+                $("#choice2").click(function () {
+                    losses++;
+                    $("#lossesfinal").text("Losses: " + losses);
+                });
+                $("#choice3").click(function () {
+                    losses++;
+                    $("#lossesfinal").text("Losses: " + losses);
+                });
                 wins++;
-        $("#winsfinal").text("Wins:" + wins);
-                
+                $("#winsfinal").text("Wins:" + wins);
+
 
 
                 $("#choice1").click(function () {
@@ -92,9 +149,23 @@ function countdown() {
                     $("#choice3").text("The Ark of Moses");
                     $("#choice4").text("The Holy Grail");
                     $("#clocktitle").text("Countdown Clock");
+                    $("#choice1").click(function () {
+                        losses++;
+                        $("#lossesfinal").text("Losses: " + losses);
+                    });
+                    $("#choice2").click(function () {
+                        losses++;
+                        $("#lossesfinal").text("Losses: " + losses);
+                    });
+                    $("#choice3").click(function () {
+                        losses++;
+                        $("#lossesfinal").text("Losses: " + losses);
+                    });
                     wins++;
-        $("#winsfinal").text("Wins:" + wins);
                     
+
+                    $("#winsfinal").text("Wins:" + wins);
+
 
                     $("#choice4").click(function () {
                         console.log("Game Ended");
@@ -122,9 +193,7 @@ function countdown() {
 
 
 
-$("#winsfinal").text("Wins: " + wins);
-$("#lossesfinal").text("Losses: " + losses);
-$("#unansweredfinal").text("Unanwered: " + unanswered);
+
 
 
 //Random values are assigned to each of the gem gifs and listen for the on-click event 
@@ -167,15 +236,15 @@ $("#choice1").click(function () {
 
 
 $("#choice2").click(function () {
-    console.log("Choice 1 Pressed");
+    console.log("Choice 2 Pressed");
 })
 
 $("#choice3").click(function () {
-    console.log("Choice 1 Pressed");
+    console.log("Choice 3 Pressed");
 })
 
 $("#choice4").click(function () {
-    console.log("Choice 1 Pressed");
+    console.log("Choice 4 Pressed");
 })
 
 
