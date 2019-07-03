@@ -54,6 +54,10 @@ $("#startbutton").click(function () {
 
 
     $("#choice4").click(function () {
+        $("#choice1").click(function () {
+        
+            console.log("Testing");
+        });
         console.log("Question 2 Starting");
         $("#question").text("What is the name of the second Indian Jones Movie?");
         //Question 2 
