@@ -1,11 +1,9 @@
-Welcome to my Trivia Game! 
+Welcome to my Indiana Jones Trivia Game! 
 
-You must try and guess the correct answer to each question before time runs out. 
+You must try and guess the correct answer to all the questions before time runs out. 
 
-At the end of the round you will be shown how many you got correct, incorrect, or didn't answer. 
+At the end of the round you will be shown how many you got correct and incorrect. 
 
-Each question is movie related trivia. 
-
-Lets see how well you know your movies! 
+Lets see how well you know your Indiana Jones movies! 
 
 Enjoy! 
