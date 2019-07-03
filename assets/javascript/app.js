@@ -1,7 +1,7 @@
 //First the user needs to see the start button and click that to start the game
-var wins = 0;
-var losses = 0;
-var unanswered = 0;
+var wins = 1;
+var losses = 1;
+
 $("#winsfinal").text("");
 $("#lossesfinal").text("");
 $("#startbutton").text("Click here to Start Game");
@@ -25,19 +25,18 @@ $("#startbutton").click(function () {
     $("#choice4").text("A bag of sand");
     $("#startbutton").text("");
     $("#clocktitle").text("Countdown Clock");
-    $("#winsfinal").text("Correct: " + wins);
-    $("#lossesfinal").text("Incorrect: " + losses);
+    
     $("#choice1").click(function () {
-        losses++;
-        $("#lossesfinal").text("Losses: " + losses);
+        
+        $("#lossesfinal").text("Losses: " + losses++);
     });
     $("#choice2").click(function () {
-        losses++;
-        $("#lossesfinal").text("Losses: " + losses);
+        
+        $("#lossesfinal").text("Losses: " + losses++);
     });
     $("#choice3").click(function () {
-        losses++;
-        $("#lossesfinal").text("Losses: " + losses);
+        
+        $("#lossesfinal").text("Losses: " + losses++);
     });
 
     var timerId = setInterval(countdown, 1000);
@@ -53,7 +52,7 @@ $("#startbutton").click(function () {
     }
 
 
-    
+
     $("#choice4").click(function () {
         console.log("Question 2 Starting");
         $("#question").text("What is the name of the second Indian Jones Movie?");
@@ -64,20 +63,19 @@ $("#startbutton").click(function () {
         $("#choice4").text("Kingdom of the Crystal Skull");
         $("#clocktitle").text("Countdown Clock");
         $("#choice1").click(function () {
-            losses++;
-            $("#lossesfinal").text("Losses: " + losses);
+            $("#lossesfinal").text("Losses: " + losses++);
         });
         $("#choice4").click(function () {
             losses++;
-            $("#lossesfinal").text("Losses: " + losses);
+            $("#lossesfinal").text("Losses: " + losses++);
         });
         $("#choice3").click(function () {
             losses++;
-            $("#lossesfinal").text("Losses: " + losses);
+            $("#lossesfinal").text("Losses: " + losses++);
         });
 
-        wins++;
-        $("#winsfinal").text("Wins:" + wins);
+        
+        $("#winsfinal").text("Wins:" + wins++);
 
 
 
@@ -91,19 +89,19 @@ $("#startbutton").click(function () {
             $("#choice4").text("Bazooka");
             $("#clocktitle").text("Countdown Clock");
             $("#choice1").click(function () {
-                losses++;
-                $("#lossesfinal").text("Losses: " + losses);
+                
+                $("#lossesfinal").text("Losses: " + losses++);
             });
             $("#choice2").click(function () {
-                losses++;
-                $("#lossesfinal").text("Losses: " + losses);
+                
+                $("#lossesfinal").text("Losses: " + losses++);
             });
             $("#choice4").click(function () {
-                losses++;
-                $("#lossesfinal").text("Losses: " + losses);
+                
+                $("#lossesfinal").text("Losses: " + losses++);
             });
-            wins++;
-            $("#winsfinal").text("Wins:" + wins);
+            
+            $("#winsfinal").text("Wins:" + wins++);
 
 
             $("#choice3").click(function () {
@@ -116,19 +114,19 @@ $("#startbutton").click(function () {
                 $("#choice4").text("Tom Holland");
                 $("#clocktitle").text("Countdown Clock");
                 $("#choice4").click(function () {
-                    losses++;
-                    $("#lossesfinal").text("Losses: " + losses);
+                   
+                    $("#lossesfinal").text("Losses: " + losses++);
                 });
                 $("#choice2").click(function () {
-                    losses++;
-                    $("#lossesfinal").text("Losses: " + losses);
+                   
+                    $("#lossesfinal").text("Losses: " + losses++);
                 });
                 $("#choice3").click(function () {
-                    losses++;
-                    $("#lossesfinal").text("Losses: " + losses);
+                    
+                    $("#lossesfinal").text("Losses: " + losses++);
                 });
-                wins++;
-                $("#winsfinal").text("Wins:" + wins);
+                
+                $("#winsfinal").text("Wins:" + wins++);
 
 
 
@@ -142,21 +140,21 @@ $("#startbutton").click(function () {
                     $("#choice4").text("The Holy Grail");
                     $("#clocktitle").text("Countdown Clock");
                     $("#choice1").click(function () {
-                        losses++;
-                        $("#lossesfinal").text("Losses: " + losses);
+                        
+                        $("#lossesfinal").text("Losses: " + losses++);
                     });
                     $("#choice2").click(function () {
-                        losses++;
-                        $("#lossesfinal").text("Losses: " + losses);
+                        
+                        $("#lossesfinal").text("Losses: " + losses++);
                     });
                     $("#choice3").click(function () {
-                        losses++;
-                        $("#lossesfinal").text("Losses: " + losses);
+                        
+                        $("#lossesfinal").text("Losses: " + losses++);
                     });
-                    wins++;
-                    
+                
 
-                    $("#winsfinal").text("Wins:" + wins);
+
+                    $("#winsfinal").text("Wins:" + wins++);
 
 
                     $("#choice4").click(function () {
@@ -192,7 +190,7 @@ $("#startbutton").click(function () {
 function reset() {
     var wins = 0;
     var losses = 0;
-    
+
 
 }
 
